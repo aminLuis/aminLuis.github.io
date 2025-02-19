@@ -1,0 +1,129 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Courier Prime', monospace;
+    margin: 0;
+    padding: 0;
+    color: hsl(288, 84%, 19%);
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: hsl(288, 84%, 19%);
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+.proyecto {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.proyecto:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: hsl(288, 84%, 19%);
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+#contacto {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.system-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajuste automático */
+    gap: 1rem; 
+    padding: 1rem;
+}
+
+.item {
+    padding: 20px;
+    text-align: center;
+}
+
+.item a {
+    text-decoration: none;
+}
+
+#sobre-mi p {
+    text-align: justify;
+}
+
+.maquina-escribir {
+    font-size: 24px;
+    white-space: nowrap; 
+    overflow: hidden;
+    border-right: 3px solid hsl(288, 84%, 19%); 
+    animation: escribir 4s steps(10, end), cursor 0.75s step-end infinite;
+    display: inline-block; 
+}
+
+.maquina-escribir {
+    font-size: 24px;
+    white-space: pre; 
+    overflow: hidden;
+    border-right: 3px solid hsl(288, 84%, 19%); 
+    animation: escribir 5s steps(13, end), cursor 0.75s step-end infinite;
+    display: inline-block; 
+}
+
+/* Animación para el efecto de escritura */
+@keyframes escribir {
+    from {
+        width: 0;
+    }
+    to {
+        width: 20%;
+    }
+}
+
+@keyframes cursor {
+    from, to {
+        border-right-color: transparent;
+    }
+    50% {
+        border-right-color: hsl(288, 84%, 19%);
+    }
+}
+
+
